@@ -1,0 +1,170 @@
+﻿<Window x:Class="ribeshWPF.style4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ribeshWPF"
+        mc:Ignorable="d"
+        Title="style4" >
+    <Grid Background="#FF5099D6">
+        <TabControl Background="White">
+
+
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel>
+                        <Image Height="50" Width="50" Source="Image/hide.jpg" Stretch="UniformToFill"/>
+                        <TextBlock Text="emloyee"/>
+                    </StackPanel>
+                </TabItem.Header>
+
+            </TabItem>
+
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel>
+                        <Image Height="50" Width="50" Source="Image/hide.jpg" Stretch="UniformToFill"/>
+                        <TextBlock Text="emloyee"/>
+                    </StackPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+
+                    </Grid.RowDefinitions>
+                    <Menu Grid.Row="0">
+                        <MenuItem Header="New Employ"></MenuItem>
+                        <MenuItem Header="Search"></MenuItem>
+
+                        <MenuItem Header="Action"></MenuItem>
+                        <MenuItem Header="Reports"></MenuItem>
+                        <MenuItem Header="Favourates"></MenuItem>
+                    </Menu>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="311*"/>
+                            <ColumnDefinition Width="66*"/>
+                        </Grid.ColumnDefinitions>
+                        <GroupBox Header="Employee Snapshot" Grid.Column="0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="95*"/>
+                                    <ColumnDefinition Width="107*"/>
+                                    <ColumnDefinition Width="103*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Content="Model num" Grid.Column="0" Grid.Row="0"/>
+                                <TextBox  Text="dksd" Width="200" Height="20" Grid.Column="1" Grid.Row="0"/>
+
+                                <Label Content="CC" Grid.Column="0" Grid.Row="1"/>
+                                <TextBox Width="200" Height="20" Grid.Column="1" Grid.Row="1"/>
+
+                                <Label Content="Price" Grid.Column="0" Grid.Row="2"/>
+                                <TextBox Width="200" Height="20" Grid.Column="1" Grid.Row="2"/>
+
+                                <Label Content="Colors" Grid.Column="0" Grid.Row="3"/>
+                                <ComboBox Width="200" Height="20" Grid.Column="1" Grid.Row="3">
+                                    <ComboBox.Items>
+                                        <ComboBoxItem Content="red" />
+                                        <ComboBoxItem Content="blue" />
+                                        <ComboBoxItem Content="black" />
+                                        <ComboBoxItem Content="orange" />
+                                        <ComboBoxItem Content="white" />
+                                        <ComboBoxItem Content="green" />
+
+
+                                    </ComboBox.Items>
+                                </ComboBox>
+
+                                <CheckBox Content="Resume Recieved" Grid.Column="2" Grid.Row="0"/>
+                                <CheckBox Content=" 19 on file" Grid.Column="2" Grid.Row="1"/>
+                                <CheckBox Content="Active" Grid.Column="2" Grid.Row="2"/>
+                                <CheckBox Content="Assignment" Grid.Column="2" Grid.Row="3"/>
+                                
+                              
+
+
+
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Header="Phone/Email" Grid.Column="1">
+                            <StackPanel>
+                                <TextBlock Text="Ribesh@hotmail.com"/>
+                                <TextBlock Text="9818260207"/>
+                            </StackPanel>
+                        </GroupBox>
+                    </Grid>
+
+                    <GroupBox Header="messages" Grid.Row="2">
+                        <DataGrid>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Date"/>
+                                <DataGridTextColumn Header="Action"/>
+                                <DataGridTextColumn Header="Message"/>
+                                <DataGridTextColumn Header="Rep"/>
+                                <DataGridTextColumn Header="Contact"/>
+                                <DataGridTextColumn Header="Due"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </GroupBox>
+                    <StackPanel Grid.Row="3" Orientation="Horizontal">
+                        <GroupBox Header="Assignments" HorizontalAlignment="Stretch" Width="500">
+                            <DataGrid>
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Title"/>
+                                    <DataGridTextColumn Header="Customer"/>
+                                    <DataGridTextColumn Header="Code"/>
+                                    <DataGridTextColumn Header="Start"/>
+                                    <DataGridTextColumn Header="End"/>
+                                    <DataGridTextColumn Header="Bill"/>
+                                    <DataGridTextColumn Header="Pay"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </GroupBox>
+                        <GroupBox Header="Interest codes" HorizontalAlignment="Stretch" Width="250" >
+                            <ListBox>
+                                <ListBox.Items>
+                                    <ListBoxItem Content="First " />
+                                    <ListBoxItem Content="Second " />
+                                    <ListBoxItem Content="Third " />
+                                </ListBox.Items>
+                            </ListBox>
+
+                        </GroupBox>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel>
+                        <Image Height="50" Width="50" Source="Image/hide.jpg" Stretch="UniformToFill"/>
+                        <TextBlock Text="emloyee"/>
+                    </StackPanel>
+                </TabItem.Header>
+
+            </TabItem>
+
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel>
+                        <Image Height="50" Width="50" Source="Image/hide.jpg" Stretch="UniformToFill"/>
+                        <TextBlock Text="emloyee"/>
+                    </StackPanel>
+                </TabItem.Header>
+
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+</Window>
