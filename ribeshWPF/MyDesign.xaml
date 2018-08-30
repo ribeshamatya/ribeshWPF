@@ -1,0 +1,72 @@
+﻿<Window x:Class="ribeshWPF.MyDesign"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:y="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ribeshWPF"
+        mc:Ignorable="d"
+        Title="MyDesign" Height="300" Width="300">
+    <Grid>
+
+        <Grid  Width="250">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <Image Source="/image/Play_Store.png" Grid.Column="0" Grid.Row="0" Height="20" HorizontalAlignment="Right" VerticalAlignment="Center" />
+            <TextBlock Text="Playstore"  Grid.Column="1" Grid.Row="0" Foreground="LawnGreen" FontFamily="Comic Sans MS" FontWeight="DemiBold" FontSize="20"/>
+
+            <TextBox Text="You May Like :" Grid.Column="1" Grid.Row="1" Foreground="Black" FontSize="10" FontFamily="ariel" />
+            <Grid Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="30 10 0 0" >
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Margin="5" >
+                    <y:PackIconSimpleIcons Kind="Viber" HorizontalAlignment="Center" Background="#7C529E" Foreground="White" />
+                    <TextBlock Text="Viber" />
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="5">
+                    <y:PackIconSimpleIcons Kind="Facebook" HorizontalAlignment="Center" Foreground="RoyalBlue" />
+                    <TextBlock Text="Facebook" />
+                </StackPanel>
+                <StackPanel Grid.Column="2" Margin="5" >
+                    <y:PackIconSimpleIcons Kind="Instagram" HorizontalAlignment="Center" Foreground="White">
+                        <y:PackIconSimpleIcons.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                <GradientStop Color="#FF515BD4" Offset="0"/>
+                                <GradientStop Color="#FFF58529" Offset="0.9"/>
+                                <GradientStop Color="#FF8134AF" Offset="0.222"/>
+                                <GradientStop Color="#FFDD2A7B" Offset="0.402"/>
+                                <GradientStop Color="#FFFEDA27" Offset="0.611"/>
+                            </LinearGradientBrush>
+                        </y:PackIconSimpleIcons.Background>
+                    </y:PackIconSimpleIcons>
+                    <TextBlock Text="Instagram" />
+                </StackPanel>
+                <StackPanel Grid.Column="3" Margin="5" >
+                    <y:PackIconSimpleIcons Kind="Skype" HorizontalAlignment="Center" Foreground="White" Background="#FF01AEF2" />
+                    <TextBlock Text="Skype" />
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Window>
