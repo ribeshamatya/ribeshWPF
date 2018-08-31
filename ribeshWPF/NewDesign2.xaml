@@ -1,0 +1,101 @@
+﻿<Window x:Class="ribeshWPF.NewDesign2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ribeshWPF"
+        mc:Ignorable="d"
+        Title="NewDesign2">
+    <Grid>
+        <TabControl>
+            <TabControl.Resources>
+                <Style TargetType="TextBlock" >
+                    <Setter Property="Margin" Value="5 0 0 1" />
+                </Style>
+                <Style TargetType="TextBox" >
+                    <!--<Setter Property="Width" Value="120"  />-->
+                    <!--<Setter Property="Margin" Value="3" />-->
+                </Style>
+                <Style TargetType="StackPanel" x:Key="tsy">
+                    <Setter Property="Width" Value="200" />
+                    <Setter Property="HorizontalAlignment" Value="Left" />
+                    <Setter Property="Margin" Value="1 1 10 1" />
+                </Style>
+                <Style TargetType="StackPanel" x:Key="sty">
+                    <Setter Property="Margin" Value="30 2 1 1" />
+                </Style>
+                <Style TargetType="StackPanel" x:Key="ss">
+                    <Setter Property="Width" Value="100" />
+                    <Setter Property="Margin" Value="1 1 10 1" />
+                </Style>
+              
+            </TabControl.Resources>
+
+            <TabItem Header="Patient Information">
+                <StackPanel>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Basic Information">
+                <StackPanel>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Additional Information"></TabItem>
+            <TabItem Header="Insurance Information">
+
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Style="{StaticResource sty}">
+                        <StackPanel Orientation="Vertical" Style="{StaticResource tsy}">
+                            <TextBlock Text="Carrier" />
+                            <TextBox Text="" />
+                        </StackPanel>
+
+                        <StackPanel Style="{StaticResource tsy}">
+                            <TextBlock Text="City" />
+                            <TextBox Text="" />
+                        </StackPanel>
+
+                        <StackPanel Style="{StaticResource tsy}">
+                            <TextBlock Text="Adress" />
+                            <TextBox Text="" />
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" Style="{StaticResource sty}">
+                        <StackPanel Orientation="Vertical" Style="{StaticResource  ss}">
+                            <TextBlock Text="State"  />
+                            <ComboBox Height="18" IsEditable="True">
+                                <ComboBoxItem>Ribesh</ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Style="{StaticResource ss}">
+                            <TextBlock Text="Zip" />
+                            <TextBox Text="" />
+                        </StackPanel>
+
+                      
+                    </StackPanel>
+
+
+
+
+
+                </Grid>
+
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

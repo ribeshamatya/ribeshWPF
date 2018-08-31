@@ -85,6 +85,9 @@
     <Compile Include="NewDesign.xaml.cs">
       <DependentUpon>NewDesign.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NewDesign2.xaml.cs">
+      <DependentUpon>NewDesign2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NewWindow.xaml.cs">
       <DependentUpon>NewWindow.xaml</DependentUpon>
     </Compile>
@@ -148,6 +151,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="NewDesign.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewDesign2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
