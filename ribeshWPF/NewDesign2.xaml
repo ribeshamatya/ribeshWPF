@@ -29,6 +29,7 @@
                     <Setter Property="Margin" Value="1 1 10 1" />
                 </Style>
               
+              
             </TabControl.Resources>
 
             <TabItem Header="Patient Information">
@@ -85,10 +86,63 @@
                             <TextBlock Text="Zip" />
                             <TextBox Text="" />
                         </StackPanel>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" Style="{StaticResource sty}">
+                            <StackPanel Orientation="Vertical" Style="{StaticResource  ss}">
+                                <TextBlock Text="Phone"  />
+                            <TextBox Text="" />
+                        </StackPanel>
 
-                      
+                            <StackPanel Style="{StaticResource ss}">
+                                <TextBlock Text="Group" />
+                                <TextBox Text="" />
+                            </StackPanel>
+
+                        <StackPanel Style="{StaticResource ss}">
+                            <TextBlock Text="Policy ID Number" />
+                            <TextBox Text="" />
+                        </StackPanel>
+
+
+                    </StackPanel >
+
+                    <StackPanel Grid.Row="3" Orientation="Horizontal" Style="{StaticResource sty}">
+
+                        <StackPanel Style="{StaticResource ss}">
+                            <TextBlock Text="Relationship" />
+                            <TextBox Text="" />
+                        </StackPanel>
+
+                        <StackPanel Style="{StaticResource ss}">
+                            <TextBlock Text="ABC" />
+                            <TextBox  Style="{StaticResource textdesign1}" Text="iygf6kiftotftfotfrotrf" />
+                        </StackPanel>
+
+                        <StackPanel Style="{StaticResource ss}">
+                            <TextBlock Text="Date" />
+                            <DatePicker />
+                        </StackPanel>
+
+                        <StackPanel Style="{StaticResource ss}">
+                            <TextBlock Text="Sex" />
+                            <StackPanel Orientation="Horizontal">
+                            <RadioButton Content="M"  />
+                            <RadioButton Content="F" />
+                            </StackPanel>
+
+
+
+                        </StackPanel>
+
+                       
                     </StackPanel>
 
+                    <StackPanel Grid.Row="8"  Orientation="Horizontal" Style="{StaticResource sty}">
+                        <Border CornerRadius="20" Margin="5" Width="150" BorderThickness="1" Padding="10" Background="RoyalBlue">
+                            <Button  Content="Cancel" Background="RoyalBlue" Foreground="White" FontWeight="Bold"   Padding="2"  />
+                        </Border>
+                        <Button Style="{StaticResource roundedbutton1}" Content="Save" Width="150" />
+                    </StackPanel>
 
 
 
