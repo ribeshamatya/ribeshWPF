@@ -73,6 +73,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Animation.xaml.cs">
+      <DependentUpon>Animation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ComboBoxstyle.xaml.cs">
       <DependentUpon>ComboBoxstyle.xaml</DependentUpon>
     </Compile>
@@ -103,8 +106,14 @@
     <Compile Include="NewDesign2.xaml.cs">
       <DependentUpon>NewDesign2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NewPractice.xaml.cs">
+      <DependentUpon>NewPractice.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NewWindow.xaml.cs">
       <DependentUpon>NewWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.xaml.cs">
+      <DependentUpon>Resources.xaml</DependentUpon>
     </Compile>
     <Compile Include="RibeshDesign.xaml.cs">
       <DependentUpon>RibeshDesign.xaml</DependentUpon>
@@ -130,9 +139,28 @@
     <Compile Include="tab.xaml.cs">
       <DependentUpon>tab.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Trigger.xaml.cs">
+      <DependentUpon>Trigger.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\Canvas.xaml.cs">
+      <DependentUpon>Canvas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\DocPanel.xaml.cs">
+      <DependentUpon>DocPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\stackpanel.xaml.cs">
+      <DependentUpon>stackpanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="uc\WrapPanel.xaml.cs">
+      <DependentUpon>WrapPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WPF1.xaml.cs">
       <DependentUpon>WPF1.xaml</DependentUpon>
     </Compile>
+    <Page Include="Animation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ComboBoxstyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -177,7 +205,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="NewPractice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="NewWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -188,6 +224,10 @@
     <Page Include="Resources\IconsNonShared.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\RibeshStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RibeshDesign.xaml">
       <SubType>Designer</SubType>
@@ -221,6 +261,26 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Trigger.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\Canvas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\DocPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\stackpanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uc\WrapPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WPF1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -244,6 +304,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="a.flv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
