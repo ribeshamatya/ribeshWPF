@@ -109,6 +109,9 @@
     <Compile Include="NewPractice.xaml.cs">
       <DependentUpon>NewPractice.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NewTemplate.xaml.cs">
+      <DependentUpon>NewTemplate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NewWindow.xaml.cs">
       <DependentUpon>NewWindow.xaml</DependentUpon>
     </Compile>
@@ -138,6 +141,9 @@
     </Compile>
     <Compile Include="tab.xaml.cs">
       <DependentUpon>tab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Template.xaml.cs">
+      <DependentUpon>Template.xaml</DependentUpon>
     </Compile>
     <Compile Include="Trigger.xaml.cs">
       <DependentUpon>Trigger.xaml</DependentUpon>
@@ -209,6 +215,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="NewTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="NewWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -258,6 +268,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="tab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Template.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

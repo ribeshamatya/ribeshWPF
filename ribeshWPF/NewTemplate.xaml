@@ -1,0 +1,49 @@
+﻿<Window x:Class="ribeshWPF.NewTemplate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ribeshWPF"
+        mc:Ignorable="d"
+        Title="NewTemplate" Height="300" Width="300">
+    <Window.Resources>
+        <ControlTemplate TargetType="Button" x:Key="Contr" >
+            <StackPanel Background="YellowGreen" Height="70" Width="150" Name="atk">
+                <StackPanel.Effect>
+                    <DropShadowEffect Color="Gray"/>
+                </StackPanel.Effect>
+                <Image Source="Image/hide.jpg"  Height="50" Name="im" >
+                    <!--<Image.RenderTransform>
+                        <TranslateTransform X="10" Y="1" />
+                    </Image.RenderTransform>-->
+                </Image>
+                <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            
+            </StackPanel>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <!--<Setter TargetName="atk" Property="Width" Value="100" />-->
+                    
+                  
+                    <Setter TargetName="im" Property="RenderTransform" >
+                        <Setter.Value>
+                            <TransformGroup>
+                                <TranslateTransform Y="-50" X="10"/>
+
+                                <RotateTransform Angle="90" />
+                            </TransformGroup>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter TargetName="im" Property="HorizontalAlignment" Value="Center" />
+                    <Setter TargetName="im" Property="VerticalAlignment" Value="Center" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+            
+            
+        </ControlTemplate>
+    </Window.Resources>
+
+    <StackPanel>
+        <Button Content="I am Button" Template="{StaticResource Contr}" Click="Button_Click" />
+    </StackPanel>
+</Window>
