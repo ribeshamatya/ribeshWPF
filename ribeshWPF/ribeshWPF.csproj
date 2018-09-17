@@ -145,6 +145,9 @@
     <Compile Include="Template.xaml.cs">
       <DependentUpon>Template.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TextBlockTemplate.xaml.cs">
+      <DependentUpon>TextBlockTemplate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Trigger.xaml.cs">
       <DependentUpon>Trigger.xaml</DependentUpon>
     </Compile>
@@ -272,6 +275,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Template.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TextBlockTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

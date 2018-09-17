@@ -8,7 +8,7 @@
         Title="NewTemplate" Height="300" Width="300">
     <Window.Resources>
         <ControlTemplate TargetType="Button" x:Key="Contr" >
-            <StackPanel Background="YellowGreen" Height="70" Width="150" Name="atk">
+            <StackPanel Background="MediumAquamarine" Height="70" Width="150" Name="atk">
                 <StackPanel.Effect>
                     <DropShadowEffect Color="Gray"/>
                 </StackPanel.Effect>
