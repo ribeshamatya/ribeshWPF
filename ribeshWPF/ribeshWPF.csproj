@@ -118,6 +118,9 @@
     <Compile Include="NewWindow.xaml.cs">
       <DependentUpon>NewWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NewWindow3.xaml.cs">
+      <DependentUpon>NewWindow3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Resources.xaml.cs">
       <DependentUpon>Resources.xaml</DependentUpon>
     </Compile>
@@ -168,6 +171,9 @@
     </Compile>
     <Compile Include="uc\WrapPanel.xaml.cs">
       <DependentUpon>WrapPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window3.xaml.cs">
+      <DependentUpon>Window3.xaml</DependentUpon>
     </Compile>
     <Compile Include="WPF1.xaml.cs">
       <DependentUpon>WPF1.xaml</DependentUpon>
@@ -233,6 +239,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="NewWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewWindow3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -344,6 +354,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Window3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WPF1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -382,6 +396,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Image\attachment_53725966.png" />
     <Content Include="Image\hide.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -391,6 +406,8 @@
     <Content Include="Image\Play_Store.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Image\sshot-2011-04-19-10.png" />
+    <Resource Include="Image\qQbad.png" />
     <Resource Include="Resources\Entypo-license.txt" />
     <Resource Include="Resources\WindowsIcons-license.txt" />
   </ItemGroup>
