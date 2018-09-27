@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application x:Class="ribeshWPF.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:ribeshWPF" StartupUri="Window3.xaml">
+<Application x:Class="ribeshWPF.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:ribeshWPF" 
+             StartupUri="Window1.xaml">
     <Application.Resources>
         <ResourceDictionary>
         <ResourceDictionary.MergedDictionaries>
