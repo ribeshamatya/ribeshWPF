@@ -1,0 +1,91 @@
+<Window x:Class="WpfApp1.DesignGrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="DesignGrid" Height="450" >
+    <StackPanel>
+        <ListBox>
+            <ListBox.Items>
+                <ListBoxItem>
+                    <StackPanel Orientation="Horizontal">
+                        <Border BorderBrush="Black" BorderThickness="1" Padding="7" Margin="5">
+                            <Button Content="CheckIn" Width="150" Height="50" />
+                            
+                        </Border>
+
+                        <Border BorderBrush="Black" BorderThickness="1" Padding="7" Margin="5">
+                            <Button Content="CheckOut" Width="150" Height="50" />
+                        </Border>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox.Items>
+        </ListBox>
+        <StackPanel Orientation="Horizontal">
+        <Grid HorizontalAlignment="Left" Margin="20">
+            <Border BorderBrush="Black" BorderThickness="1" Width="250">
+            <ListBox>
+                <ListBox.Items>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Name" Margin="7" Padding="5" />
+                            <TextBox Text="" Width="150" Margin="7" Padding="5" />
+                        </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Adress" Margin="7" Padding="5" />
+                                <TextBox Text="" Width="150" Margin="7" Padding="5"  />
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Phone " Margin="7" Padding="5" />
+                                <TextBox Text="" Width="150" Margin="7" Padding="5" />
+                            </StackPanel>
+
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox.Items>
+            </ListBox>
+            </Border>
+        </Grid>
+
+
+        <Grid HorizontalAlignment="Left" Margin="20">
+            <Border BorderBrush="Black" BorderThickness="1" Width="250">
+                <ListBox>
+                    <ListBox.Items>
+                        <ListBoxItem>
+                            <StackPanel Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Email Ad." Margin="7" Padding="5" />
+                                    <TextBox Text="" Width="150" Margin="7" Padding="5" />
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Password" Margin="7" Padding="5" />
+                                    <TextBox Text="" Width="150" Margin="7" Padding="5"  />
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Recovery " Margin="7" Padding="5" />
+                                    <TextBox Text="" Width="150" Margin="7" Padding="5" />
+                                </StackPanel>
+
+                            </StackPanel>
+                        </ListBoxItem>
+                    </ListBox.Items>
+                </ListBox>
+            </Border>
+        </Grid>
+
+
+
+
+
+
+        </StackPanel>
+    </StackPanel>
+</Window>
