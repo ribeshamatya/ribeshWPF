@@ -37,15 +37,12 @@
   <ItemGroup>
     <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net45\ControlzEx.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="MahApps.Metro, Version=1.6.5.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.6.5\lib\net45\MahApps.Metro.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="MahApps.Metro.IconPacks, Version=2.3.0.4, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.IconPacks.2.3.0\lib\net45\MahApps.Metro.IconPacks.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -53,7 +50,6 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net45\System.Windows.Interactivity.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,92 +69,98 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Animation.xaml.cs">
+    <Compile Include="old\Animation.xaml.cs">
       <DependentUpon>Animation.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ComboBoxstyle.xaml.cs">
+    <Compile Include="old\ComboBoxstyle.xaml.cs">
       <DependentUpon>ComboBoxstyle.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Social\Design5.xaml.cs">
+      <DependentUpon>Design5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="old\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="old\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gradient.xaml.cs">
+    <Compile Include="old\Gradient.xaml.cs">
       <DependentUpon>Gradient.xaml</DependentUpon>
     </Compile>
-    <Compile Include="grid.xaml.cs">
+    <Compile Include="old\grid.xaml.cs">
       <DependentUpon>grid.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ListboxStyle.xaml.cs">
+    <Compile Include="old\ListboxStyle.xaml.cs">
       <DependentUpon>ListboxStyle.xaml</DependentUpon>
     </Compile>
-    <Compile Include="main.xaml.cs">
+    <Compile Include="old\main.xaml.cs">
       <DependentUpon>main.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Mwindow.xaml.cs">
+    <Compile Include="old\Mwindow.xaml.cs">
       <DependentUpon>Mwindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MyDesign.xaml.cs">
+    <Compile Include="old\MyDesign.xaml.cs">
       <DependentUpon>MyDesign.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NewDesign.xaml.cs">
+    <Compile Include="old\NewDesign.xaml.cs">
       <DependentUpon>NewDesign.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NewDesign2.xaml.cs">
+    <Compile Include="old\NewDesign2.xaml.cs">
       <DependentUpon>NewDesign2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NewPractice.xaml.cs">
+    <Compile Include="old\NewPractice.xaml.cs">
       <DependentUpon>NewPractice.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NewTemplate.xaml.cs">
+    <Compile Include="old\NewTemplate.xaml.cs">
       <DependentUpon>NewTemplate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NewWindow.xaml.cs">
+    <Compile Include="old\NewWindow.xaml.cs">
       <DependentUpon>NewWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NewWindow3.xaml.cs">
+    <Compile Include="old\NewWindow3.xaml.cs">
       <DependentUpon>NewWindow3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Resources.xaml.cs">
+    <Compile Include="old\Resources.xaml.cs">
       <DependentUpon>Resources.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RibeshDesign.xaml.cs">
+    <Compile Include="old\RibeshDesign.xaml.cs">
       <DependentUpon>RibeshDesign.xaml</DependentUpon>
     </Compile>
-    <Compile Include="stackpanel.xaml.cs">
+    <Compile Include="old\stackpanel.xaml.cs">
       <DependentUpon>stackpanel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="style3.xaml.cs">
+    <Compile Include="old\style3.xaml.cs">
       <DependentUpon>style3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="style4.xaml.cs">
+    <Compile Include="old\style4.xaml.cs">
       <DependentUpon>style4.xaml</DependentUpon>
     </Compile>
-    <Compile Include="style5.xaml.cs">
+    <Compile Include="old\style5.xaml.cs">
       <DependentUpon>style5.xaml</DependentUpon>
     </Compile>
-    <Compile Include="styles.xaml.cs">
+    <Compile Include="old\styles.xaml.cs">
       <DependentUpon>styles.xaml</DependentUpon>
     </Compile>
-    <Compile Include="styles2.xaml.cs">
+    <Compile Include="old\styles2.xaml.cs">
       <DependentUpon>styles2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="tab.xaml.cs">
+    <Compile Include="old\tab.xaml.cs">
       <DependentUpon>tab.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Template.xaml.cs">
+    <Compile Include="old\Template.xaml.cs">
       <DependentUpon>Template.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TextBlockTemplate.xaml.cs">
+    <Compile Include="old\TextBlockTemplate.xaml.cs">
       <DependentUpon>TextBlockTemplate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TextBoxTemplate.xaml.cs">
+    <Compile Include="old\TextBoxTemplate.xaml.cs">
       <DependentUpon>TextBoxTemplate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Trigger.xaml.cs">
+    <Compile Include="old\Trigger.xaml.cs">
       <DependentUpon>Trigger.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Social\Messenger.xaml.cs">
+      <DependentUpon>Messenger.xaml</DependentUpon>
     </Compile>
     <Compile Include="uc\Canvas.xaml.cs">
       <DependentUpon>Canvas.xaml</DependentUpon>
@@ -172,40 +174,44 @@
     <Compile Include="uc\WrapPanel.xaml.cs">
       <DependentUpon>WrapPanel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window1.xaml.cs">
+    <Compile Include="old\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window3.xaml.cs">
+    <Compile Include="old\Window3.xaml.cs">
       <DependentUpon>Window3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WPF1.xaml.cs">
+    <Compile Include="old\WPF1.xaml.cs">
       <DependentUpon>WPF1.xaml</DependentUpon>
     </Compile>
-    <Page Include="Animation.xaml">
+    <Page Include="old\Animation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ComboBoxstyle.xaml">
+    <Page Include="old\ComboBoxstyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Gradient.xaml">
+    <Page Include="Social\Design5.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="grid.xaml">
+    <Page Include="old\Gradient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ListboxStyle.xaml">
+    <Page Include="old\grid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="main.xaml">
+    <Page Include="old\ListboxStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="old\main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="old\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -213,43 +219,43 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="old\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Mwindow.xaml">
+    <Page Include="old\Mwindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MyDesign.xaml">
+    <Page Include="old\MyDesign.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NewDesign.xaml">
+    <Page Include="old\NewDesign.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NewDesign2.xaml">
+    <Page Include="old\NewDesign2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NewPractice.xaml">
+    <Page Include="old\NewPractice.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NewTemplate.xaml">
+    <Page Include="old\NewTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NewWindow.xaml">
+    <Page Include="old\NewWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NewWindow3.xaml">
+    <Page Include="old\NewWindow3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Resources.xaml">
+    <Page Include="old\Resources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -265,47 +271,51 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RibeshDesign.xaml">
+    <Page Include="old\RibeshDesign.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="stackpanel.xaml">
+    <Page Include="old\stackpanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="style3.xaml">
+    <Page Include="old\style3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="style4.xaml">
+    <Page Include="old\style4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="style5.xaml">
+    <Page Include="old\style5.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="styles.xaml">
+    <Page Include="old\styles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="styles2.xaml">
+    <Page Include="old\styles2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="tab.xaml">
+    <Page Include="old\tab.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Template.xaml">
+    <Page Include="old\Template.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TextBlockTemplate.xaml">
+    <Page Include="old\TextBlockTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TextBoxTemplate.xaml">
+    <Page Include="old\TextBoxTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Social\Messenger.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -337,7 +347,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Trigger.xaml">
+    <Page Include="old\Trigger.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -357,15 +367,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window1.xaml">
+    <Page Include="old\Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window3.xaml">
+    <Page Include="old\Window3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WPF1.xaml">
+    <Page Include="old\WPF1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -391,7 +401,7 @@
     <None Include="a.flv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="packages.config" />
+    <None Include="old\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -403,6 +413,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Entypo-license.txt" />
+    <Resource Include="Resources\WindowsIcons-license.txt" />
     <Resource Include="Image\attachment_53725966.png" />
     <Content Include="Image\hide.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -415,8 +427,6 @@
     </Content>
     <Resource Include="Image\sshot-2011-04-19-10.png" />
     <Resource Include="Image\qQbad.png" />
-    <Resource Include="Resources\Entypo-license.txt" />
-    <Resource Include="Resources\WindowsIcons-license.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
